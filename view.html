@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script type="text/javascript" src="/node_modules/web3/dist/web3.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="/server.js"></script>
+	<script type="text/javascript" src="/view.js"></script>
+	<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+	<title> View Users on Blockchain</title>
+</head>
+
+<body>
+		  <h1> View User Details</h1>
+
+		  <br>
+
+          <form id="setData">
+
+              <div class="form-group row">
+                <label class="col-sm-1 control-label" for="grantedTo">User ID </label>
+                <div class="col-sm-10">
+                  <input type="text" id="_id" class="form-control" placeholder=" Enter User ID "></input>
+                </div>
+              </div>
+
+              <br><br>
+
+             <div class="form-group row">
+                <div class="col-sm-10">
+                  <button type="button" id="viewRecords"  class="btn btn-primary">Submit</button>
+                  <button type="button" id="clearRecords"  class="btn btn-primary">Clear</button>
+                </div>
+              </div>
+
+          </form>
+
+          <br> <br> <br>
+
+	     <div id="add_to_me">
+            </div>
+
+</body>
+
+</html>

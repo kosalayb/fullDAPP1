@@ -1,0 +1,42 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script type="text/javascript" src="/node_modules/web3/dist/web3.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="/server.js"></script>
+	<script type="text/javascript" src="/add.js"></script>
+	<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+	<title> Add Users on Blockchain</title>
+</head>
+
+<body>
+		  <br>
+
+          <form id="setData">
+
+              <div class="form-group row">
+                <label class="col-sm-1 control-label" for="grantedTo">User Details </label>
+                <div class="col-sm-10">
+                  <input type="text" id="_id" class="form-control" placeholder=" ID "></input>
+                  <input type="text" id="_name" class="form-control" placeholder="Name "></input>
+                  <input type="text" id="_dept" class="form-control" placeholder="Department "></input>
+                </div>
+              </div>
+
+              <br><br>
+
+             <div class="form-group row">
+                <div class="col-sm-10">
+                  <button type="button" id="addRecords"  class="btn btn-primary">Submit</button>
+                  <button type="button" id="clearRecords"  class="btn btn-primary">Clear</button>
+                </div>
+              </div>
+
+          </form>
+
+
+</body>
+
+</html>
