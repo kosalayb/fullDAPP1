@@ -26,6 +26,8 @@ function addUser(){
 			"dept":$("#_dept").val()
 		});
 
+		//var instance=getInstance();
+
 		//write user json object to IPFS and hash is recorded on the blockchain
 		$.ajax({
 			url: "http://localhost:3000/writeJSON",
