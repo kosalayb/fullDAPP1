@@ -1,4 +1,6 @@
 $(document).ready(function () { 
+
+	console.log("current account @user reg" + account);
 	clearRecords();
 	addUser();
 });
@@ -37,6 +39,7 @@ function addUser(){
 			success: function(_hash){ 
 				//alert(_hash);
 				console.log("write Json to IPFS:"+_hash);
+				console.log("current account @user reg" + account);
 
 				//TODO: Record on blockchain - map(serial number, hash of the file)
 				instance.methods.addUserHash(id,_hash)

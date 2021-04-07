@@ -1,14 +1,17 @@
+
+
   //direct connection to Ganache/or ethereum
-  // var provider = 'HTTP://127.0.0.1:7545';
-  // var web3Provider = new Web3.providers.HttpProvider(provider);
-  // var web3 = new Web3(web3Provider);
+  var provider = 'HTTP://127.0.0.1:7545';
+  var web3Provider = new Web3.providers.HttpProvider(provider);
+  var web3 = new Web3(web3Provider);
 
   //connect to ropsten using infura api
-  var web3 = new Web3(new Web3.providers.HttpProvider(
-    'https://ropsten.infura.io/v3/51d098f6bc2e47d8a9fecfbe86933541'
-  ));
+  // var web3 = new Web3(new Web3.providers.HttpProvider(
+  //   'https://ropsten.infura.io/v3/51d098f6bc2e47d8a9fecfbe86933541'
+  // ));
 
-  var contractAddress ='0x3C18222349741F45aF5be8722116b25bf2aCf526';
+ // var contractAddress ='0x3C18222349741F45aF5be8722116b25bf2aCf526'; //compliance without event
+  var contractAddress='0x8cF4f0EA403b8Ab794d77BE4662F9620e82Bb61b';
   var contractABI;
 
   //read abi from rest call
@@ -31,8 +34,9 @@
   });
 
   var instance = new web3.eth.Contract(contractABI, contractAddress);
-  var account;
 
+
+  var account;
   //connect to accounts selected from metamask client
   ethereum.enable();
   ethereum.on('accountsChanged', function (accounts) {
@@ -40,6 +44,7 @@
     web3.eth.defaultAccount = account;
     console.log("Current Acoount :" + account);
   });
+
 
 
 

@@ -5,21 +5,50 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script type="text/javascript" src="/node_modules/web3/dist/web3.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.js"></script>
 	<script type="text/javascript" src="/server.js"></script>
 	<script type="text/javascript" src="/compliance.js"></script>
 	<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 	<title> Compliance Checking</title>
+
 </head>
 
 <body>
-	This is compliance page.
+	<h1 style="text-align:center">pH Compliance Checking</h1>
 
-	<div id="outcome">
-    </div>
-    <br><br>
+<table style="width:100%">
+	<tr> 
+		<td> </td>
+		<td><label for="fname">Enter Farmer ID (e.g., 1,2,3, etc.):</label>
+		<input type="text" id="farmerID" name="Farmer ID" value="1"></td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td><button class="btn btn-primary" style="background-color:Green" onClick="checkPHCompliance()">pH Compliance Results</button></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td><div id="fid"> </div>  <div id="lh"> </div>  <div id="pHComp"></div> </td>
+		<td></td>
+	</tr>
+</table>
+
+
+	
     
-    <div id="compliance">
+    
+
+<!--     <div id="comEvents">
     </div>
+    <div id="compResults">
+    </div> -->
+<!--     <div id="fid">
+    </div>
+    <div id="lh">
+    </div>
+    <div id="pHComp">
+    </div> -->
 
 
 </body>
